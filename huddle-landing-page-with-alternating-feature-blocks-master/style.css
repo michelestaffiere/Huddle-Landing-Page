@@ -1,9 +1,6 @@
 /* Borbox setup */
-html { 
-    box-sizing: border-box;
- }
+html { box-sizing: border-box;}
 *, *:before, *:after { box-sizing: inherit; }
-
 /* General Styling  */
 /* 
 ## Colors ###
@@ -13,25 +10,28 @@ html {
 - Very Pale Cyan: hsl(193, 100%, 96%)
 - Very Dark Cyan: hsl(192, 100%, 9%)
 - Grayish Blue: hsl(208, 11%, 55%) */
+
 .wrapper{
-    max-width: 110rem;
-    width: 80%;
+    max-width: 70%;
     margin: 0 auto;
 }
 h1 h2 h3{
     font-family: 'Poppings';
     font-weight: 700;
 }
-h1{
-    font-size: 3em;
-}
+h1{font-size: 3em;}
 
+/* img{
+    width: 100%; 
+    height: auto;
+} */
 /* Header + Nav styling */
 nav.wrapper{
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 header{
     display: flex;
@@ -44,14 +44,12 @@ header{
     background-color:hsl(193, 100%, 96%) ; /* Fallback if SVG fails to load in */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;;
-    min-height: 80vh;
-    /* max-height: 50vh; */
+    background-size: cover;
+    min-height: 70vh;
 }
-#mockup, img{
+#mockup{
     width: 100%; 
     height: auto;
-
 }
 #mission-container{
     max-width: 40rem;
@@ -80,19 +78,21 @@ body{
     justify-content: space-between;
     align-items: center;
     border-radius: 25px;
-    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.26);
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.067);
     min-height: 30rem;
 }
 .cards article{
     padding: 2rem;
     width: 80%;
 }
-.cards article h2{
-    font-size: 2em;
+.cards article h2{font-size: 2em;}
+
+.svg-card-container{padding: 2rem;}
+.svg-cards{
+    width: 100%; 
+    height: auto;
 }
-.svg-body{
-    padding: 2rem;
-}
+
 .cta-box{
     text-align: center;
     position: absolute;
@@ -100,7 +100,7 @@ body{
     bottom: -23%;
     border-radius: 15px;
     padding: 0% 6% 3% 6%;
-    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.26)
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.067);
 }
 /* Footer Styling */
 footer{
@@ -111,24 +111,50 @@ footer{
 #footer-container{
     margin-top: 15rem;
     display: flex;
-    justify-content: space-around;
-    gap: 15rem;
+    gap: 11%;
 } 
 #footer-container div{
-    max-width: 20%;
+    min-width: 20%;
 }
-.footer-list li{
-    margin-top: 5%;
+
+.white-filter{
+    filter: invert(98%) sepia(8%) saturate(4%) hue-rotate(135deg) brightness(111%) contrast(100%);
+    width: 10%;
+    height: auto;
+    
 }
-#email{
-    list-style-image: url(./images/icon-email.svg);
+#social-container{
+    display: flex;
+    width: 70%;
+    height: auto;
 }
-#phone{
-    list-style-image: url(./images/icon-phone.svg);
+
+/* .footer-logo{
+    flex-direction: row;
+} */
+
+#footer-logo{
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: -7%;
+    top: -5%;
 }
-#location{
-    list-style-image: url(./images/icon-location.svg);
+.footer-list li{margin-top: 5%;}
+
+ul{
+    list-style: none;
 }
+#email{list-style-image: url(./images/icon-email.svg);}
+
+#phone{list-style-image: url(./images/icon-phone.svg);}
+
+#location{list-style-image: url(./images/icon-location.svg);}
+
+.attribution { font-size: 11px; text-align: center; }
+.copyright{font-size: 11px; text-align: right; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
 /* Buttons */
 .cta-header{
     background-color:hsl(0, 0%, 100%);
@@ -139,9 +165,8 @@ footer{
     border-radius: 5000px;
     border: none;
     outline: none;
-    -webkit-box-shadow: 11px 9px 15px -7px rgba(0,0,0,0.29); 
-    box-shadow: 11px 9px 15px -7px rgba(0,0,0,0.29);
-
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.067);
+    transition: all .5s linear;
 }
 .cta-body{
     background-color:hsl(322, 100%, 66%);
@@ -152,16 +177,40 @@ footer{
     border-radius: 5000px;
     border: none;
     outline: none;
-    -webkit-box-shadow: 11px 9px 15px -7px rgba(0,0,0,0.29); 
-    box-shadow: 11px 9px 15px -7px rgba(0,0,0,0.29);
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.067);
+    transition: all .5s linear;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.cta-body:focus{
+    background-color:hsl(322, 100%, 80%);
+}
+.cta-body:hover{
+    background-color:hsl(322, 100%, 80%);
+}
+.cta-header:focus{
+    color: rgba(0, 0, 0, 0.464); ;
+}
+.cta-header:hover{
+    color: rgba(0, 0, 0, 0.464); ;
+}
+
 /* Media Q's */
 
-
+/* 4K and Larger screens */
+@media (min-width:4096px) {
+    #herosvg{
+        min-height: 50vh;
+    }
+    .wrapper{
+        max-width: 120rem;
+        min-width: 50%;
+        margin: 0 auto;
+    }
+}
 /* Ipad Pro (12.9in) & Ipad Pro (11in) */
 @media (max-width:1405px ) {
+    .wrapper{
+        max-width: 50rem;
+    }
     header{
         flex-direction: column;
     }
@@ -169,12 +218,101 @@ footer{
         text-align: center;
         margin-bottom: 1.875rem;
     }
+    #footer-container{
+        margin-top: 7rem;
+        display: flex;
+        gap: 0rem;
+    }
+    #footer-container div{
+        max-width: 40%;
+    }
     .cta-box{
         bottom: -16%;
-        padding: 0% 4% 3% 4%;
-        bottom: -15%;
+        padding: 2% 4% 2% 4%;
     }
     .cta-box h1{
         font-size: 2em;
     }
+    #footer-logo{
+        width: 90%;
+        left: -13%;
+        top: -2%;
+      }
+    }
+/* Iphones and other mobile devices */
+
+@media (max-width: 650px) {
+    h1{
+        font-size: 165%;
+    }
+    .wrapper{
+        max-width: 93%;
+    }
+    nav.wrapper{
+        align-items: baseline;
+    }
+    
+    #header-logo{
+        width: 60%;
+    }
+    #herosvg{
+        min-height: 10vh;
+    }
+    #mockup{
+        width: 100%; 
+    }
+    .cards{
+        flex-direction: column-reverse;
+    }
+    .cards-container{
+        margin: 5% 0 65% 0;
+    }
+    .svg-body{
+        padding: 5%;
+    }
+    .cards article{
+        text-align: center;
+        padding: 0;
+    }
+    .cards article h2{
+        font-size: 140%;
+    }
+    #special-card .svg-card-container{
+        order: 2;
+    }
+    .cta-header {
+        padding: 2% 0%;
+        width: 68%;
+      }
+    .cta-box h1{
+        font-size: 110%;
+    }
+    .cta-body{
+        padding-bottom: 4%;
+        padding-top: 4%;
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+     .cta-box{
+        bottom: -18%;
+        padding: 10% 6% 10% 6%;
+    }
+    #footer-container{
+       flex-direction: column;
+    }
+    #footer-container div{
+        max-width: 100%;
+     }
+     #list-2{
+        margin-bottom: -15px;
+        margin-top: -15px;
+     }
+     .social-media{
+        text-align: center;
+        padding: 10% 0% 10% 0%;
+     }
+     #footer-logo {
+        width: 70%;
+        left: -7%;
+      }
 }

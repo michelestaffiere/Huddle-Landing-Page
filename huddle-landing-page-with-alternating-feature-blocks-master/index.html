@@ -17,7 +17,7 @@
 <body>
   <div id="herosvg">
     <nav class="wrapper">
-      <div><img src="./images/logo.svg" alt="Logo"></div>
+      <div><img id="header-logo" src="./images/logo.svg" alt="Logo"></div>
       <button class="cta-header">Try It Free</button>
     </nav>
     <header class="wrapper">
@@ -28,7 +28,7 @@
         </p> 
         <button class="cta-body">Get Started For Free</button>
       </article>
-      <div id="mockup"><img src="./images/illustration-mockups.svg" alt="app"></div>
+      <div ><img id="mockup" src="./images/illustration-mockups.svg" alt="app"></div>
     </header>
   </div>
 
@@ -41,13 +41,13 @@
          Generate meaningful discussions with your audience and build a strong, loyal community.Think of the insightful conversations you miss out on with a feedback form. 
         </p>
       </article>
-      <div class="svg-body">
-        <img src="./images/illustration-grow-together.svg" alt="Customers using app">
+      <div class="svg-card-container">
+        <img  class="svg-cards" src="./images/illustration-grow-together.svg" alt="Customers using app">
       </div>
     </section>
-    <section class="cards"> 
-      <div class="svg-body">
-        <img src="./images/illustration-flowing-conversation.svg" alt="Conversation by a tree">
+    <section id="special-card" class="cards"> 
+      <div class="svg-card-container">
+        <img class="svg-cards" src="./images/illustration-flowing-conversation.svg" alt="Conversation by a tree">
       </div>
       <article>
         <h2>Flowing Conversations</h2>
@@ -55,6 +55,7 @@
           wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.
         </p>
       </article>
+     
     </section>
     <section class="cards">
       <article>
@@ -63,8 +64,8 @@
           It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
         </p>
       </article>
-      <div class="svg-body">
-        <img src="./images/illustration-your-users.svg" alt="your users using the app">
+      <div class="svg-card-container">
+        <img class="svg-cards" src="./images/illustration-your-users.svg" alt="your users using the app">
       </div>
     </section>
       <section class="cta-box">
@@ -80,13 +81,14 @@
       <section id="footer-container">
         <div>  
           <ul class="footer-list">
+            <img id="footer-logo" class="white-filter" src="./images/logo.svg" alt="Company Logo">
             <li id="location">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
             <li id="phone">+1-543-123-4567</li>
             <li id="email">example@huddle.com</li>
           </ul>
         </div>
 
-        <div> 
+        <div class="company-info"> 
           <ul class="footer-list">
             <li>About Us</li>
             <li>What We Do</li>
@@ -94,20 +96,26 @@
           </ul>
         </div>
        
-        <div>
+        <div id="list-2" class="company-info">
           <ul class="footer-list">
             <li>Career</li>
             <li>Blog</li>
             <li>Contact Us</li>
           </ul> 
         </div>
-      </section>
+          <div class="social-media">
+              <a href="https://www.facebook.com/"><img class="white-filter" src="./images/facebook-o-svgrepo-com.svg" alt="Facebook"></a>
 
-      &copy; Copyright 2018 Huddle. All rights reserved.
+              <a href="hhttps://twitter.com/"><img class="white-filter" id="twitter-logo" src="./images/twitter-svgrepo-com.svg" alt="Twitter"></a>
+
+              <a href="https://www.instagram.com/"><img class="white-filter" src="./images/instagram-svgrepo-com.svg" alt="Instagram"></a>
+          </div>
+      </section>
         <p class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="#">Michele Staffiere :)</a>.
+          Coded by <a href="#">Michele Staffiere :)</a>
         </p>
+        <p class="copyright"> &copy; Copyright 2018 Huddle. All rights reserved.</p>
   </div>
   </footer>
 </body>
