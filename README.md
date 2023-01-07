@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/huddle-landing-page-with-alternating-feature-blocks-FT-cZlTPYf)
 - Live Site URL: [Hosted by Vercel](https://huddle-landing-page-parsk955m-michelestaffiere.vercel.app/)
 
 ## My process
