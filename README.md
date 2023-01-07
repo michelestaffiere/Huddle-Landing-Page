@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Hosted by Vercel](https://huddle-landing-page-parsk955m-michelestaffiere.vercel.app/)
 
 ## My process
 
